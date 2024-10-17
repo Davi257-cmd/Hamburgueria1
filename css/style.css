@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+PE:wght@100..400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* nav */
+
+nav {
+    background-color: #630707;
+    display: flex;
+    justify-content: space-between;
+    padding: 17px;
+}
+
+li {
+    color: white;
+}
+
+.links {
+    list-style-type: none;
+    font-family: "Heebo", sans-serif;
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+    padding: 1.5em;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #f53838;
+}
+
+#logo {
+    height: 80px;
+
+}
+
+/* header */
+
+header {
+    background-color: #2e0303;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.textp {
+    font-family: "Luckiest Guy", sans-serif;
+    font-size: 6.4em;
+}
+
+header p {
+    font-family: sans-serif;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-around;
+}
+
+.banner {
+  height: 550px;
+}
+
+/* main */
+
+.PM {
+    font-size: 1.5em;
+}
+
+.l1, .l2 {
+    display: flex;
+    justify-content: space-around; 
+    margin: 3em 1em;
+    align-items: center;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, transparent, #CCC, transparent);
+
+}
+
+.RS {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1em;
+}
+
+.banners {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.banner1 {
+    height: 200px;
+}
+
+.banner2 {
+    height: 200px;
+}
+
+hr #linha_2 {
+    padding: 5px;
+    margin: 7px;
+    width: 10px;
+}
+
+/* footer */
+
+footer {
+    background-color: #2E0303;
+    color: white;
+    padding: 0.9em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ul.box-redes-sociais {
+  
+    display: flex;
+    background: transparent;
+    width: 305px;
+    float: none;
+    margin: auto;
+  }
+  ul.box-redes-sociais li {
+    list-style: none;
+    margin: auto;
+  }
+  ul.box-redes-sociais li a {
+    
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 45px;
+    font-size: 22px;
+    margin: 0 5px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #eaeaea;
+    z-index: 1;
+  }
+  ul.box-redes-sociais li a .icon {
+    position: relative;
+    color: #262626;
+    transition: .3s;
+    z-index: 3;
+  }
+  ul.box-redes-sociais li a:hover .icon {
+    color: #fff;
+    scale: 1.2;
+  }
+  ul.box-redes-sociais li a:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: .6s;
+    z-index: 2;
+  }
+  ul.box-redes-sociais li a:hover:before {
+    top: 0;
+  }
+  ul.box-redes-sociais li.facebook a:before{
+    background: #3b5999;
+  }
+  ul.box-redes-sociais li.instagram a:before{
+    background:hsl(0 0% 10%);
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  }
+  ul.box-redes-sociais li.twitter a:before{
+    background: #55acee;
+  }
+  ul.box-redes-sociais li.pinterest a:before {
+    background: #dc2933;
+  }
+  ul.box-redes-sociais li.youtube a:before {
+    background: #ff1d15;
+  }
+
+  @media (max-width: 1024px) {
+    .textp {
+        font-size: 4.5em;
+    }
+
+    .banner {
+        height: 300px;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 0.1em;
+        text-align: center;
+    }
+
+    .logo {
+        height: 60px;
+    }
+
+    .l1, .l2 {
+        flex-direction: column;
+    }
+
+    .banners {
+        flex-direction: column;
+        gap: 1em;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .textp {
+        font-size: 3em;
+    }
+
+    .banner {
+        height: 200px;
+    }
+
+    .links {
+        flex-direction: row;
+    }
+
+    .logo {
+        height: 50px;
+    }
+
+    .l1, .l2 {
+        gap: 2em;
+    }
+
+    .banners {
+        gap: 1em;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .textp {
+        font-size: 2.5em;
+    }
+
+    .banner {
+        height: 100px;
+    }
+
+    header {
+        padding: 1em;
+    }
+
+    .links {
+        gap: 0.3em;
+        font-size: 0.8em;
+    }
+
+    .logo {
+        height: 40px;
+    }
+
+    .l1, .l2 {
+        gap: 1.5em;
+        margin: 1.5em 0.5em;
+    }
+
+    .banners {
+        gap: 1em;
+    }
+}
+
+
