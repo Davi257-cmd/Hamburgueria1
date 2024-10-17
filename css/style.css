@@ -50,6 +50,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 1em;
 }
 
 .textp {
@@ -64,10 +65,7 @@ header p {
 .banner {
     display: flex;
     justify-content: space-around;
-}
-
-.banner {
-  height: 550px;
+    height: 550px;
 }
 
 /* main */
@@ -211,7 +209,7 @@ ul.box-redes-sociais {
 
     header {
         flex-direction: column;
-        gap: 0.1em;
+        gap: 2em;
         text-align: center;
     }
 
@@ -236,7 +234,7 @@ ul.box-redes-sociais {
     }
 
     .banner {
-        height: 200px;
+        height: 300px;
     }
 
     .links {
@@ -263,7 +261,7 @@ ul.box-redes-sociais {
     }
 
     .banner {
-        height: 100px;
+        height: 300px;
     }
 
     header {
